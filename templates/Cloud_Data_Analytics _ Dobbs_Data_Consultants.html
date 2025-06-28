@@ -1,0 +1,704 @@
+{% extends 'main.html' %}
+
+
+{% block title %} Cloud Data Analytics | Dobbs Data Consultants {% endblock %}
+
+{% block content %}
+<section class="nav-hero position-relative mb-0">
+
+    <nav class="navbar navbar-expand-xl navbar-dark">
+        <div class="container">
+            <a title="MSP Building Automation Systems" class="navbar-brand"
+                href="https://www.dobbsdata.com/index.html"><img src="{{url_for('static', filename='assets/logo.png')}}"
+                    alt="MSP Building Automation Systems"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars text-dark"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" title="D365 Migration" aria-current="page"
+                            href="https://www.dobbsdata.com/d365.html">D365 Migration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a title="Cloud Data" class="nav-link"
+                            href="https://www.dobbsdata.com/cloud-data-analytics.html">Cloud Data
+                            Integration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a title="BI Reporting" class="nav-link" href="https://www.dobbsdata.com/bi-reporting.html">BI
+                            Reporting</a>
+                    </li>
+                </ul>
+
+                <div class="d-lg-block d-flex justify-content-center">
+
+                    <a class="pill-btn" title="Phone Number" href="tel:+15616699526">
+                        <div class="icon-div">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <span>+1 (561) 669-9526</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero position-relative">
+        <div class="container">
+            <div class="hero-flex">
+                <div class="info-div">
+                    <h1 class="mb-2 text-capitalize">
+                        Expert <span class="text-secondary">Cloud Data Analytics</span> Solutions for Your Business
+                    </h1>
+
+                    <p class="mb-4">
+                        Dobbs Data provides expert cloud data analytics solutions, leveraging Microsoft's tools to
+                        drive growth and innovation. Our team of certified data engineers specializes in designing
+                        and implementing cloud data analytics solutions that help you make sense of your data and
+                        drive informed decisions.
+                    </p>
+                    <ul>
+                        <li>Seamless cloud migration</li>
+                        <li>Expert data engineering</li>
+                        <li>Robust security</li>
+                        <li>Cost-effective</li>
+                    </ul>
+
+                    <div class="d-flex flex-wrap justify-content-start mt-5 gap-3">
+                        <a class="pill-btn" title="D365 Solutions" href="https://www.dobbsdata.com/d365.html">
+                            <div class="icon-div">
+                                <i class="fa-brands fa-windows"></i>
+                            </div>
+                            <span><b>D365</b> Solutions</span>
+                        </a>
+                        <a class="pill-btn-transparent" title="Phone Number" href="tel:+15616699526">
+                            <div class="icon-div">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </div>
+                            <span>+1 (561) 669-9526</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="img-div">
+                    <h3 class="header text-white text-center mb-2">Book Free Consultation</h3>
+                    <div class="tidy-cal-div">
+                        <div>
+                            <iframe
+                                src="./Cloud Data Analytics _ Dobbs Data Consultants_files/talk-to-dobbs-data-for-your-d365-needs.html"
+                                id="tidycal-embed-zha2v" class="tidycal-embed" title="TidyCal" scrolling="yes"
+                                style="border: none; width: 100%; min-width: 100%; overflow: hidden; min-height: 550px;"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <img class="hero-img" src="img/blue-particle-bg.jpg" alt="hero image" /> -->
+        <video id="heroVideo" muted="" loop="" autoplay="" playsinline="">
+            <source src="{{url_for('static', filename='video/brain-digital.mp4')}}" type="video/mp4">
+        </video>
+    </div>
+
+</section>
+
+
+<!-- Achievements Section -->
+<section class="achievements pb-2">
+    <div class="container">
+        <div class="flex">
+            <div class="typo">
+                <h2 class="header mb-3">
+                    Cloud Data Analytics <span class="text-secondary">Solutions</span> for Your Business
+                </h2>
+                <p class="mb-4">
+                    Dobbs Data provides expert cloud data analytics solutions to help you unlock the full potential
+                    of your data. Our team of certified data engineers specializes in designing and implementing
+                    cloud data analytics solutions that drive growth and innovation. We leverage Microsoft's top
+                    tools to provide tailored solutions that meet your unique business needs and goals.
+                </p>
+
+                <div class="d-flex flex-wrap gap-2">
+                    <a class="pill-btn" title="Phone Number" href="tel:+15616699526">
+                        <div class="icon-div">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <span>+1 (561) 669-9526</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="marquee-section">
+                <div class="marquee">
+                    <div class="marquee_group">
+                        <img src="{{url_for('static', filename='assets/data-engineer-associate-certified.png')}}"
+                            alt="Brand">
+                        <img aria-hidden="true" src="{{url_for('static', filename='assets/microsoft-certified.png')}}"
+                            alt="brand 1">
+                        <img aria-hidden="true"
+                            src="{{url_for('static', filename='assets/data-engineer-professional-certified.png')}}"
+                            alt="brand 2">
+
+                    </div>
+
+                    <div aria-hidden="true" class="marquee_group">
+                        <img src="{{url_for('static', filename='assets/data-engineer-associate-certified.png')}}"
+                            alt="Brand Hidden">
+                        <img aria-hidden="true" src="{{url_for('static', filename='assets/microsoft-certified.png')}}"
+                            alt="brand 1 hidden">
+                        <img aria-hidden="true"
+                            src="{{url_for('static', filename='assets/data-engineer-professional-certified.png')}}"
+                            alt="brand 2 hidden">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Us -->
+<section class="two-col-info">
+    <div class="container">
+        <div class="flex">
+            <div class="img-div">
+                <img class="main-img" style="transform: scaleX(-1);"
+                    src="{{url_for('static', filename='assets/data-clouds.jpeg')}}" alt="Data Clouds">
+
+            </div>
+            <div class="info-div">
+                <p class="sub-header">
+                    Drive Growth and Innovation with Dobbs Data
+                </p>
+                <h3 class="header">
+
+                    <span class="text-secondary">Transform Your Insights</span> with Cloud Data Analytics
+                </h3>
+                <p class="mb-3">
+                    Cloud data analytics offers unparalleled opportunities to harness the power of your data,
+                    providing deep insights and driving informed decision-making. Our cloud data analytics services
+                    leverage advanced tools and techniques to analyze large volumes of data quickly and accurately.
+                    By utilizing platforms like Microsoft Azure, we ensure your data is securely stored and readily
+                    accessible, enabling real-time analytics and dynamic reporting.
+                    <br><br>
+                    Our expert team works with you to develop customized analytics solutions tailored to your
+                    specific business needs. We integrate data from multiple sources, apply advanced analytics
+                    models, and present findings in clear, actionable formats. With our cloud data analytics
+                    services, you gain a comprehensive understanding of your business performance, customer
+                    behavior, and market trends. Let us help you turn raw data into valuable insights that propel
+                    your business forward.
+                </p>
+
+                <hr>
+
+                <div class="d-flex flex-wrap gap-2">
+                    <a class="pill-btn" title="Phone Number" href="tel:+15616699526">
+                        <div class="icon-div">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <span>+1 (561) 669-9526</span>
+                    </a>
+
+                    <a class="pill-btn-transparent" title="Phone Number"
+                        href="https://www.dobbsdata.com/cloud-data-analytics.html#contact">
+                        <div class="icon-div">
+                            <i class="fa-regular fa-calendar-check"></i>
+                        </div>
+                        <span class="text-secondary">Book a free Consultation</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="about-us">
+    <div class="container">
+        <div class="flex">
+            <div class="info-div">
+                <h3 class="header">
+                    Get Expert D365 Migration Solutions for Your Business
+                </h3>
+
+                <p class="info">
+                    Dobbs Data offers expert D365 migration solutions to help you seamlessly transition to the
+                    cloud.
+                    Our certified data engineers leverage Microsoft's top tools to provide tailored migration
+                    services
+                    that ensure a smooth and secure transition. We handle every aspect of the migration process,
+                    from initial assessment and planning to data transfer and integration.
+                </p>
+
+                <div class="d-flex flex-wrap gap-2">
+                    <a class="pill-btn" title="Phone Number" href="tel:+15616699526">
+                        <div class="icon-div">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <span>+1 (561) 669-9526</span>
+                    </a>
+
+                    <a class="pill-btn-transparent" title="Phone Number"
+                        href="https://www.dobbsdata.com/cloud-data-analytics.html#contact">
+                        <div class="icon-div">
+                            <i class="fa-regular fa-calendar-check"></i>
+                        </div>
+                        <span class="text-white">Book a free Consultation</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="img-div">
+                <img class="main-img" src="{{url_for('static', filename='assets/girl-transparent.png')}}"
+                    style="transform: scaleX(-1);" alt="Laptop Mockup">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="logo-bar pb-2">
+    <div class="container">
+        <div class="flex">
+            <div class="typo">
+                <h2 class="header mb-3">
+                    Clients We've Helped <span class="text-secondary">Succeed</span> with Data
+                </h2>
+                <p class="mb-4">
+                    Dobbs Data has helped countless clients achieve success by turning their data into a strategic
+                    asset. Our expert team leverages Microsoft's top tools to provide tailored data solutions that
+                    drive growth, innovation, and success. Contact Dobbs Data today and discover how we can help you
+                    transform your data into a competitive advantage.
+                </p>
+
+                <div class="d-flex flex-wrap gap-2">
+                    <a class="pill-btn" title="Phone Number" href="tel:+15616699526">
+                        <div class="icon-div">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <span>+1 (561) 669-9526</span>
+                    </a>
+                </div>
+            </div>
+            <div class="img-row">
+                <div class="img-div">
+                    <img src="{{url_for('static', filename='/ben.jpg')}}" alt="client 1">
+                </div>
+                <div class="img-div">
+                    <img src="{{url_for('static', filename='assets/js.jpg')}}" alt="client 2">
+                </div>
+                <div class="img-div">
+                    <img src="{{url_for('static', filename='assets/moly.jpg')}}" alt="client 3">
+                </div>
+                <div class="img-div">
+                    <img src="{{url_for('static', filename='assets/mli.jpg')}}" alt="client 4">
+                </div>
+                <div class="img-div">
+                    <img src="{{url_for('static', filename='assets/prs.jpg')}}" alt="client 5">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- How it Works -->
+<section class="how-it-works how-it-works-dark">
+    <div class="container">
+        <h3 class="header text-center mb-3 text-white">
+            How It Works
+        </h3>
+        <p class="text-center mx-auto text-info col-md-7 mb-4 text-white">
+            Unleash the Power of Your Data with Dobbs Data
+        </p>
+        <div class="flex">
+            <div class="column">
+                <div class="step-num">
+                    <p>01</p>
+                </div>
+                <h4>Deep Dive &amp; Strategy</h4>
+                <p class="info">
+                    We start by working closely with you to understand your unique business needs and goals. We'll
+                    then assess your current data infrastructure, pinpointing areas for improvement. Together, we'll
+                    craft a tailored plan to unlock the full potential of your data.
+                </p>
+            </div>
+
+            <div class="column">
+                <div class="step-num">
+                    <p>02</p>
+                </div>
+                <h4>Seamless Migration &amp; Integration</h4>
+                <p class="info">
+                    Next, we'll migrate and integrate your data seamlessly, ensuring a smooth transition. We'll set
+                    up secure data warehouses, tailor BI reporting to your specific needs, and leverage cloud
+                    analytics for data-driven decision-making.
+                </p>
+            </div>
+
+            <div class="column">
+                <div class="step-num">
+                    <p>03</p>
+                </div>
+                <h4>Ongoing Optimization &amp; Support</h4>
+                <p class="info">
+                    Our commitment doesn't stop at implementation. We'll continuously optimize your data solutions,
+                    ensuring they deliver ongoing value. This includes robust security measures and proactive
+                    maintenance to keep your data healthy and secure.
+                </p>
+            </div>
+        </div>
+
+        <div class="d-flex mt-5">
+            <a class="btn btn-secondary rounded-pill px-5 fs-20 mx-auto" title="Call Now"
+                href="https://www.dobbsdata.com/index.html#contact">
+                Book a Consultation
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- About Us -->
+<!-- Expert Solutions -->
+<section class="two-col-info multiple-popups-info">
+    <div class="container">
+        <div class="flex flex-row-reverse">
+            <div class="img-div">
+                <img class="main-img" src="{{url_for('static', filename='assets/data-brain.jpeg')}}"
+                    alt="Data Solutions">
+                <div class="popup popup-1">
+                    <i class="fa-solid fa-cogs"></i>
+                </div>
+                <div class="popup popup-2 py-2 px-4">
+                    <p class="fs-18 ">
+                        <i class="fa-solid fa-database me-2 text-secondary"></i>
+                        Fully customized end-to-end solutions
+                    </p>
+                </div>
+            </div>
+            <div class="info-div">
+                <p class="sub-header">
+                    Expert Solutions for Your Data Needs
+                </p>
+                <h3 class="header mb-3">
+                    Unlock the Full Potential of Your Data
+                </h3>
+                <ul style="grid-template-columns: repeat(1, 1fr);">
+                    <li>Unleash the power of a fully customized end-to-end solution.</li>
+                    <li>Leverage industry best practices in design and delivery.</li>
+                    <li>Onboard data expertly from virtually any source systems for your reporting needs.</li>
+                    <li>Metadata-Driven Processing for dynamic mapping data integration.</li>
+                    <li>Establish a well-organized GitHub repository structure.</li>
+                    <li>CI/CD DevOps Setup for All Deployments.</li>
+                    <li>Automate Alerts and Notifications.</li>
+                    <li>Customized Data Quality Checks.</li>
+                    <li>Cost-optimized solution on Azure from our deep experience.</li>
+                    <li>Data Model design based on Kimball data modeling principles.</li>
+                    <li>Detailed Process Map and Documentation.</li>
+                    <li>Tight integration to business specific needs.</li>
+                </ul>
+                <a class="btn btn-secondary fs-19 px-4"
+                    href="https://www.dobbsdata.com/cloud-data-analytics.html#contact">
+                    Schedule a Free Consultation
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Testimonials -->
+<section class="testimonials">
+    <img class="bg-img" src="{{url_for('static', filename='assets/blue-particle-bg.jpg')}}" alt="Testimonial BG">
+    <div class="container">
+
+        <div>
+            <p class="fw-600 text-white sub-header">Clients Testimonials</p>
+            <h3 class="header text-white">What our Valuable Customers say</h3>
+        </div>
+
+        <div class="testimonial-slider slick-initialized slick-slider slick-dotted"><i
+                class="fa-solid fa-chevron-left left-arrow slick-arrow" style=""></i>
+            <!-- Testimonial 1 -->
+            <div class="slick-list draggable">
+                <div class="slick-track" style="opacity: 1; width: 4624px; transform: translate3d(-1156px, 0px, 0px);">
+                    <div class="column slick-slide slick-cloned" data-slick-index="-2" id="" aria-hidden="true"
+                        tabindex="-1" style="width: 538px; height: 385px;">
+                        <img class="quote" src="{{url_for('static', filename='assets/quote.png')}}" alt="Quote Icon 2">
+                        <p class="text-start ratings mt-4 fs-18 text-secondary">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                        <p class="data">
+                            "All the desired BI report implementation was completed. The client is pleased with our
+                            delivery
+                            within budget despite many ad-hoc changes."
+                        </p>
+                        <div class="user-info">
+                            <!-- Client Details -->
+                            <div class="user-details">
+                                <p class="name">Chemical Solutions Supplier</p>
+                                <p class="address">January 22, 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true"
+                        tabindex="-1" style="width: 538px; height: 385px;">
+                        <img class="quote" src="{{url_for('static', filename='assets/quote.png')}}" alt="Quote Icon 3">
+                        <p class="text-start ratings mt-4 fs-18 text-secondary">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                        <p class="data">
+                            "The client is delighted with the end result as we transitioned all Excel reporting to Power
+                            BI
+                            and delivered the solution on time."
+                        </p>
+                        <div class="user-info">
+                            <!-- Client Details -->
+                            <div class="user-details">
+                                <p class="name">Automotive and Industrial Markets Supplier</p>
+                                <p class="address">November 13, 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false"
+                        tabindex="0" role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00"
+                        style="width: 538px; height: 385px;">
+                        <img class="quote" src="{{url_for('static', filename='assets/quote.png')}}" alt="Quote Icon 1">
+                        <p class="text-start ratings mt-4 fs-18 text-secondary">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                        <p class="data">
+                            "The customer is very happy with the implementation. It was easy for them to move their
+                            existing
+                            reporting to the new, cost-effective solution with increased functionality and smooth
+                            operation."
+                        </p>
+                        <div class="user-info">
+                            <!-- Client Details -->
+                            <div class="user-details">
+                                <p class="name">Big Jewelry Retailer</p>
+                                <p class="address">February 15, 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="0"
+                        role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01"
+                        style="width: 538px; height: 385px;">
+                        <img class="quote" src="{{url_for('static', filename='assets/quote.png')}}" alt="Quote Icon 2">
+                        <p class="text-start ratings mt-4 fs-18 text-secondary">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                        <p class="data">
+                            "All the desired BI report implementation was completed. The client is pleased with our
+                            delivery
+                            within budget despite many ad-hoc changes."
+                        </p>
+                        <div class="user-info">
+                            <!-- Client Details -->
+                            <div class="user-details">
+                                <p class="name">Chemical Solutions Supplier</p>
+                                <p class="address">January 22, 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1"
+                        role="tabpanel" id="slick-slide02" aria-describedby="slick-slide-control02"
+                        style="width: 538px; height: 385px;">
+                        <img class="quote" src="{{url_for('static', filename='assets/quote.png')}}" alt="Quote Icon 3">
+                        <p class="text-start ratings mt-4 fs-18 text-secondary">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                        <p class="data">
+                            "The client is delighted with the end result as we transitioned all Excel reporting to Power
+                            BI
+                            and delivered the solution on time."
+                        </p>
+                        <div class="user-info">
+                            <!-- Client Details -->
+                            <div class="user-details">
+                                <p class="name">Automotive and Industrial Markets Supplier</p>
+                                <p class="address">November 13, 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column slick-slide slick-cloned" data-slick-index="3" id="" aria-hidden="true"
+                        tabindex="-1" style="width: 538px; height: 385px;">
+                        <img class="quote" src="{{url_for('static', filename='assets/quote.png')}}" alt="Quote Icon 1">
+                        <p class="text-start ratings mt-4 fs-18 text-secondary">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                        <p class="data">
+                            "The customer is very happy with the implementation. It was easy for them to move their
+                            existing
+                            reporting to the new, cost-effective solution with increased functionality and smooth
+                            operation."
+                        </p>
+                        <div class="user-info">
+                            <!-- Client Details -->
+                            <div class="user-details">
+                                <p class="name">Big Jewelry Retailer</p>
+                                <p class="address">February 15, 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column slick-slide slick-cloned" data-slick-index="4" id="" aria-hidden="true"
+                        tabindex="-1" style="width: 538px; height: 385px;">
+                        <img class="quote" src="{{url_for('static', filename='assets/quote.png')}}" alt="Quote Icon 2">
+                        <p class="text-start ratings mt-4 fs-18 text-secondary">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                        <p class="data">
+                            "All the desired BI report implementation was completed. The client is pleased with our
+                            delivery
+                            within budget despite many ad-hoc changes."
+                        </p>
+                        <div class="user-info">
+                            <!-- Client Details -->
+                            <div class="user-details">
+                                <p class="name">Chemical Solutions Supplier</p>
+                                <p class="address">January 22, 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column slick-slide slick-cloned" data-slick-index="5" id="" aria-hidden="true"
+                        tabindex="-1" style="width: 538px; height: 385px;">
+                        <img class="quote" src="{{url_for('static', filename='assets/quote.png')}}" alt="Quote Icon 3">
+                        <p class="text-start ratings mt-4 fs-18 text-secondary">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                        <p class="data">
+                            "The client is delighted with the end result as we transitioned all Excel reporting to Power
+                            BI
+                            and delivered the solution on time."
+                        </p>
+                        <div class="user-info">
+                            <!-- Client Details -->
+                            <div class="user-details">
+                                <p class="name">Automotive and Industrial Markets Supplier</p>
+                                <p class="address">November 13, 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+
+
+            <!-- Testimonial 3 -->
+
+            <i class="fa-solid fa-chevron-right right-arrow slick-arrow" style=""></i>
+            <ul class="slick-dots" style="" role="tablist">
+                <li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control00"
+                        aria-controls="slick-slide00" aria-label="1 of 2" tabindex="0" aria-selected="true">1</button>
+                </li>
+                <li role="presentation"><button type="button" role="tab" id="slick-slide-control01"
+                        aria-controls="slick-slide01" aria-label="2 of 2" tabindex="-1">2</button></li>
+                <li role="presentation"><button type="button" role="tab" id="slick-slide-control02"
+                        aria-controls="slick-slide02" aria-label="3 of 2" tabindex="-1">3</button></li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="top-information bg-secondary">
+    <div class="container py-3 d-flex justify-content-center align-items-center">
+        <p class="text-center text-white fw-600 fs-22 d-flex align-items-center">
+            First Responder Owned <i class="fa-solid fa-medal ps-2"></i>
+        </p>
+    </div>
+</section>
+
+<section class="contact-section" id="contact">
+    <div class="container">
+        <h3 class="header text-center">
+            Schedule a Free Consultation
+        </h3>
+        <iframe src="{{url_for('static', filename='templates/talk-to-dobbs-data-for-your-d365-needs(1).html')}}" id="tidycal-embed-dqdog" class="tidycal-embed"
+            title="TidyCal" scrolling="no"
+            style="border: none; width: 1px; min-width: 100%; height: 905px; overflow: hidden; min-height: 500px;"></iframe>
+    </div>
+</section>
+
+
+<footer>
+    <hr>
+    <div class="container mt-5">
+        <div class="d-flex justify-content-center">
+            <div class="">
+                <img src="{{url_for('static', filename='assets/logo.png')}}" alt="logo"
+                    class="d-inline-block logo my-auto mb-3">
+            </div>
+
+        </div>
+        <hr class="mt-4">
+
+
+        <p class="pt-2 pb-3 fw-500 text-info text-center">© Dobbs Data Consultants 2024. All rights
+            reserved.</p>
+    </div>
+</footer>
+
+
+<!-- End of HubSpot Embed Code -->
+
+
+<div id="lightboxOverlay" tabindex="-1" class="lightboxOverlay" style="display: none;"></div>
+<div id="lightbox" tabindex="-1" class="lightbox" style="display: none;">
+    <div class="lb-outerContainer">
+        <div class="lb-container"><img class="lb-image"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="">
+            <div class="lb-nav"><a class="lb-prev" role="button" tabindex="0" aria-label="Previous image"
+                    href="https://www.dobbsdata.com/cloud-data-analytics.html"></a><a class="lb-next" role="button"
+                    tabindex="0" aria-label="Next image" href="https://www.dobbsdata.com/cloud-data-analytics.html"></a>
+            </div>
+            <div class="lb-loader"><a class="lb-cancel" role="button" tabindex="0"></a></div>
+        </div>
+    </div>
+    <div class="lb-dataContainer">
+        <div class="lb-data">
+            <div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div>
+            <div class="lb-closeContainer"><a class="lb-close" role="button" tabindex="0"></a></div>
+        </div>
+    </div>
+</div>
+<iframe owner="archetype" title="archetype" style="display: none; visibility: hidden;"
+    src="{{url_for('static', filename='templates/saved_resource.html')}}"></iframe>
+
+{% endblock %}
