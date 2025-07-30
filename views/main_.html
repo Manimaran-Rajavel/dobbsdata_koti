@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}"> 
+    <script src="{{url_for('static', filename='css/bootstrap.min.js')}}"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    
+</head>
+<body class="container-fluide body-container">
+    
+    <header class="header border-1 border-bottom border-dark px-5 mb-2">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center para-font-fmly">
+                <div class="pe-3 border-end border-2 border-dark">
+                    <a href="/">
+                        <img src="{{url_for('static', filename='assets/logo.png')}}" alt="" class="logo">
+                    </a>
+                </div>
+                <div class="ps-3">
+                    <a href="/d365/" class="anchor-text fw-bold">
+                        D365 Migration
+                    </a>
+                </div>
+                <div class="ps-3">
+                    <a href="/cloud-data-integration" class="anchor-text fw-bold">
+                        Cloud Data Integration
+                    </a>
+                </div>
+                <div class="ps-3">
+                    <a href="/bi_solution" class="anchor-text fw-bold">
+                        BI Reporting
+                    </a>
+                </div>
+            </div>
+            <div class="para-font-fmly">
+                <a class="anchor-text call-cont rounded-2 px-3 py-2 fw-bold" href="tel:+1561669-9526">
+                    <span>
+                        <i class="bi bi-telephone pe-3"></i>
+                    </span>
+                    <span>+1 (561) 669-9526</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    {% block content %}
+
+    {% endblock %}
+
+    <footer class="footer px-3 pt-3 pb-1 para-font-fmly">
+        <h6 class="text-secondary mb-3 mt-2">© Dobbs Data Consultants 2024. All rights reserved.</h6>
+        <h6 class="text-secondary">The content available on this website is owned by us and our licensors. Copying any content, including images, without our consent is prohibited.</h6>
+    </footer>
+
+    <script src="{{url_for('static', filename='scripts/jquery.min.js')}}"></script>
+    <script src="{{url_for('static', filename='scripts/script.js')}}"></script>
+</body>
+</html>

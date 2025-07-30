@@ -1,0 +1,450 @@
+@font-face {
+  font-family: 'title-font';
+  src: url('../fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'para-font';
+  src: url('../fonts/Proxima-Nova-R-TheFontsMaster.com.otf');
+}
+
+.title-font-fmly {
+    font-family: 'title-font';
+}
+
+.para-font-fmly {
+    font-family: 'para-font';
+}
+
+
+/* Landing Page Css */
+
+/* Section-1 Start */
+
+.landing-page-section-1 {
+    position: relative;
+    background-image: url(../assets/58b1511248db07c4f3ad94b15254ad87d5fa2c69.png);
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+.analytics-cont {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000ba;
+    width: 100%;
+    height: 100%;
+}
+
+.landing-call-cont {
+    border: 2px solid #fff;
+}
+
+/* Section-1 Ends */
+
+/* Section-2 start */
+
+.landing-page-section-2 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.certified-img {
+    width: 50%;
+}
+
+.certified-img-large {
+    width: 67%;
+}
+
+/* Section-2 Ends */
+
+/* Section-3 start */
+
+.landing-page-section-3 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.landing-call-cont-prime {
+    border: 2px solid #0d6efd;
+}
+
+/* Section-3 Ends */
+
+/* Section-4 Starts */
+
+.landing-page-section-4 {
+    background-color: #000;
+}
+
+.business-img {
+    width: 90%;
+    border-radius: 15px;
+    border: 2px solid #fff;
+}
+
+/* Section-4 Ends */
+
+/* Section-5 Starts */
+
+.landing-page-section-5 {
+    padding-bottom: 4rem;
+}
+
+.card-cust {
+    border-radius: 20px;
+    padding: 20px 25px;
+}
+
+.card-img-cont {
+    height: 12rem;
+}
+
+.unlock-points-cont {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Section-5 Ends */
+
+/* Section-6 Starts */
+
+.landing-page-section-6 {
+    display: flex;
+    flex-wrap: wrap;
+    background: #000;
+}
+
+.testimonial-left {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quote {
+  font-size: 6rem;
+  color: #2563eb;
+}
+
+.testimonial-left h2 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+.nav-buttons {
+  margin-top: auto;
+}
+
+.nav-buttons button {
+  background: transparent;
+  color: #2563eb;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.testimonial-right {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
+  background: linear-gradient(to right, #000 0%, #1e40af 100%);
+}
+
+.testimonial-card {
+  background: white;
+  color: #000;
+  border-radius: 12px;
+  padding: 1rem;
+  flex: 1 1 calc(50% - 1rem);
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.testimonial-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.testimonial-info h3 {
+  color: #2563eb;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.testimonial-info .title {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-info p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .testimonial-section {
+    flex-direction: column;
+  }
+
+  .testimonial-right {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .testimonial-card {
+    flex: 1 1 100%;
+  }
+}
+
+/* Section-6 Ends */
+
+
+/* Section-7 Starts */
+
+.landing-page-section-7 {
+   
+}
+
+
+
+/* Section-7 Ends */
+
+
+
+/* Cloud Data Integration Page */
+
+/* Section 6 Starts */
+
+.integ-landing-page-section-6 {
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(to right, #000000, #1949E9);
+}
+
+/* Section 6 Ends */
+
+
+
+
+
+/* D365 Page style */
+
+/* Header */
+.body-container {
+    background-color: #fff;
+    font-family: 'Segoe UI', SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.header {
+    /* background-color: #fff; */
+    padding: 0.5rem;
+}
+
+.logo {
+    width: 9.5rem;
+}
+
+.anchor-text {
+    text-decoration: none;
+    color: #000;
+}
+
+.anchor-text:hover {
+    color: #485E87;
+}
+
+.call-cont {
+    border: 2px solid #EF5024;
+}
+
+.call-cont span i {
+    color: #EF5024;
+}
+
+
+/* section-1 css starts */
+.section-1 {
+    position: relative;
+}
+
+.d365-migration-parent {
+    background-color: #fff;
+    padding: 3rem 3rem;
+}
+
+.d365-banner-img {
+    width: 55%;
+}
+
+.d365-migration-child-1 {
+    padding: 2rem 1rem;
+    font-weight: 500;
+}
+
+/* End Section 1 */
+
+/* Section 2 Css Start */
+
+.section-2 {
+    margin-top: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #000;
+}
+
+.cust-font-clr {
+    color: #485E87;
+}
+
+.cust-font-clr-secondary {
+    color: #EF5024;
+}
+
+/* .solution-head {
+    z-index: 1;
+}
+
+.solution-cont {
+    overflow: hidden;
+    background-color: #485E87;
+    color: #fff;
+    opacity: 0;
+    transform: translateX(-30%);
+    transition: all 0.5s ease;
+    pointer-events: none;
+} */
+
+/* .solution-cont {
+    display: none;
+} */
+
+/* Section 2 Ends */
+
+/* Section 3 CSS Starts */
+
+.section-3 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.impact-text {
+    margin-bottom: 5rem;
+}
+
+.impact-parent {
+    border-radius: 15px;
+    position: absolute;
+    top: -10%;
+}
+
+.impact-cont {
+    position: relative;
+}
+
+.impact-child-1 {
+    border-radius: 15px;
+}
+
+.impact-img {
+    margin-left: auto;
+    width: 90%;
+    border-radius: 10px;
+}
+
+/* section 3 end */
+
+/* section 4 starts */
+
+.section-4 {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+.contact-cont {
+    cursor: pointer;
+}
+
+.contact-btn {
+    background-color: #000;
+    border-radius: 10px;
+}
+
+.contact-img {
+    position: absolute;
+    right: 0px;
+    /* top: -36.5%; */
+    bottom: 0px;
+    width: 20%;
+}
+
+/* section 4 ends */
+
+/* footer */
+
+.contact-popup-cont {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #00000098;
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+}
+
+.contact-close-btn {
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+.footer {
+    background-color: #1a1a1a;
+}
+
+.bi-hero-banner-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.reach-us-parent-bi {
+    position: relative;
+    background-image: url(../assets/technology-integrated-everyday-life.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.reach-us-parent-bi::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.416); 
+    z-index: 1;
+}
+
+.reach-us-parent-bi > * {
+    position: relative;
+    z-index: 2;
+}
