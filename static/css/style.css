@@ -25,31 +25,39 @@
     position: relative;
     background-image: url(../assets/58b1511248db07c4f3ad94b15254ad87d5fa2c69.png);
     background-position: top;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 80vh;
+    overflow: hidden;
 }
 
-.analytics-cont {
+.landing-page-section-1::before {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #000000ba;
     width: 100%;
     height: 100%;
+    background-color: rgba(0, 0, 0, 0.416); 
+    z-index: 1;
+}
+
+.landing-page-section-1 > * {
+    position: relative;
+    z-index: 2;
 }
 
 .landing-call-cont {
     border: 2px solid #fff;
 }
 
+
 /* Section-1 Ends */
 
 /* Section-2 start */
 
 .landing-page-section-2 {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    /* margin-top: 3rem;
+    margin-bottom: 3rem; */
 }
 
 .certified-img {
@@ -65,8 +73,8 @@
 /* Section-3 start */
 
 .landing-page-section-3 {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    /* margin-top: 3rem;
+    margin-bottom: 3rem; */
 }
 
 .landing-call-cont-prime {
@@ -92,16 +100,27 @@
 /* Section-5 Starts */
 
 .landing-page-section-5 {
-    padding-bottom: 4rem;
+    /* padding-bottom: 4rem; */
 }
 
 .card-cust {
     border-radius: 20px;
-    padding: 20px 25px;
 }
 
-.card-img-cont {
-    height: 12rem;
+/* .card-img-cont {
+    height: 30%;
+} */
+
+.card-cust-img1 {
+    
+}
+
+.card-cust-img2 {
+
+}
+
+.card-cust-img3 {
+
 }
 
 .unlock-points-cont {
@@ -285,7 +304,6 @@
 
 .d365-migration-parent {
     background-color: #fff;
-    padding: 3rem 3rem;
 }
 
 .d365-banner-img {
@@ -293,7 +311,6 @@
 }
 
 .d365-migration-child-1 {
-    padding: 2rem 1rem;
     font-weight: 500;
 }
 
@@ -302,9 +319,7 @@
 /* Section 2 Css Start */
 
 .section-2 {
-    margin-top: 1rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    /* margin-top: 1rem; */
     background-color: #000;
 }
 
@@ -339,22 +354,17 @@
 /* Section 3 CSS Starts */
 
 .section-3 {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    /* margin-top: 4%; */
 }
 
-.impact-text {
-    margin-bottom: 5rem;
+.impact-cont {
+    position: relative;
 }
 
 .impact-parent {
     border-radius: 15px;
     position: absolute;
     top: -10%;
-}
-
-.impact-cont {
-    position: relative;
 }
 
 .impact-child-1 {
@@ -372,8 +382,7 @@
 /* section 4 starts */
 
 .section-4 {
-    margin-top: 4rem;
-    margin-bottom: 1rem;
+    /* margin-top: 4rem; */
 }
 
 .contact-cont {
@@ -447,4 +456,16 @@
 .reach-us-parent-bi > * {
     position: relative;
     z-index: 2;
+}
+
+
+
+
+
+@media (max-width: 499px) {
+  .impact-parent {
+        border-radius: 15px;
+        position: absolute;
+        top: 0%;
+    }
 }
