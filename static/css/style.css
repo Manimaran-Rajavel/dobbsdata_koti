@@ -244,7 +244,7 @@
 
 @media (max-width: 500px) {
     .quote {
-        font-size: 4rem;
+        display: none;
     }
 
     .testimonial-left h2 {
