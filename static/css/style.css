@@ -8,6 +8,10 @@
   src: url('../fonts/Proxima-Nova-R-TheFontsMaster.com.otf');
 }
 
+.theme .btn-primary {
+    background-color: #000;
+}
+
 .title-font-fmly {
     font-family: 'title-font';
 }
