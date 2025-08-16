@@ -138,7 +138,7 @@
 
 .landing-page-section-6 {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     background: #000;
     padding: 1rem;
 }
@@ -154,7 +154,7 @@
 }
 
 .quote {
-    font-size: 6rem;
+    font-size: 4rem;
     color: #2563eb;
 }
 
@@ -178,25 +178,31 @@
 }
 
 .testimonial-right {
-    flex: 2;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     gap: 1rem;
     padding: 2rem;
     background: linear-gradient(to right, #000 0%, #1e40af 100%);
-    justify-content: space-between;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+.testimonial-right::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Chrome, Safari */
 }
 
 .testimonial-card {
+    min-width: calc(50% - 1rem); /* Two cards per row on desktop */
+    max-width: 500px;
     background: white;
     color: #000;
     border-radius: 12px;
     padding: 1rem;
-    flex: 1 1 calc(50% - 1rem);
     display: flex;
     gap: 1rem;
     align-items: flex-start;
-    min-width: 280px;
+    flex-shrink: 0; /* Prevent shrinking */
 }
 
 .testimonial-card img {
@@ -224,6 +230,10 @@
 
 /* ✅ Responsive Styles */
 @media (max-width: 768px) {
+    .quote {
+        display: none;
+    }
+
     .landing-page-section-6 {
         flex-direction: column;
         padding: 1rem;
@@ -236,12 +246,12 @@
     }
 
     .testimonial-right {
-        flex-direction: column;
+        flex-direction: row;
         padding: 1rem;
     }
 
     .testimonial-card {
-        flex: 1 1 100%;
+        min-width: 100%; /* Show one card on mobile */
     }
 }
 
@@ -254,14 +264,23 @@
         font-size: 1.2rem;
     }
 
-    .testimonial-card {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
     .testimonial-card img {
         margin-bottom: 1rem;
+    }
+
+    .testimonial-left-parent {
+        display: flex;
+        justify-content: center;
+    }
+
+    .testimonial-right {
+        flex-direction: row;
+        padding: 1rem;
+    }
+
+    .testimonial-card {
+        width: fit-content;
+        min-width: 100%; /* Show one card on mobile */
     }
 }
 
@@ -391,6 +410,12 @@
     /* margin-top: 4%; */
 }
 
+.power_flat_img {
+    width: 100%;
+    border-radius: 15px;
+    border: 3px solid #0d6efd;
+}
+
 /* .gain-cont-1 {
     background-image: url(../assets/7106-removebg-preview.png);
     background-position: center;
@@ -422,7 +447,9 @@
 /* section 4 starts */
 
 .section-4 {
-    /* margin-top: 4rem; */
+    background-image: url('../assets/technology-integrated-everyday-life.jpg'); 
+    background-size: cover;                
+    background-attachment: fixed;
 }
 
 .contact-cont {
@@ -474,15 +501,16 @@
 }
 
 .reach-us-parent-bi {
-    position: relative;
+    background-color: #0000006e;
+    /* position: relative;
     background-image: url(../assets/technology-integrated-everyday-life.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    overflow: hidden;
+    overflow: hidden; */
 }
 
-.reach-us-parent-bi::before {
+/* .reach-us-parent-bi::before {
     content: "";
     position: absolute;
     top: 0;
@@ -491,7 +519,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.416); 
     z-index: 1;
-}
+} */
 
 .reach-us-parent-bi > * {
     position: relative;
@@ -499,6 +527,27 @@
 }
 
 
+/* Scroll Animation CSS */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(50px); /* bottom to top */
+    transition: all 0.8s ease-out;
+}
+
+.scroll-animate.from-left {
+    transform: translateX(-50px);
+}
+
+.scroll-animate.from-right {
+    transform: translateX(50px);
+}
+
+.scroll-animate.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/* End Scroll Animation CSS */
 
 
 
